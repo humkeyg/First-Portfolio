@@ -95,7 +95,7 @@ p {
 
 .row {
     width: 100%;
-    display: flex;
+    display: grid;
     justify-content: left;
     flex-wrap: wrap;
 }
@@ -106,9 +106,10 @@ p {
 }
 
 .horiseon {
-    width: fit-content;
-   display: block;
-   margin: auto;
+    display: block;
+    margin: auto;
+    position: relative;
+    background-size: cover;
 }
 
 .more-work {
@@ -183,8 +184,8 @@ p {
 /* responsive CSS */
 @media (max-width: 1080px) {
     .image {
-        flex: 100%;
-        max-width: 480px;
+        grid: 100%;
+        max-width: 100%;
     }
 }
 
